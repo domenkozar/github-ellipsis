@@ -1,0 +1,13 @@
+{
+  "name": "Display full repository names on github",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "In September 2012 github introduced shortend repository names and this scrip removes ellipsis.",
+  "content_scripts": [
+    {
+      "js": ["jquery.min.js", "fixit.js"],
+      "matches": ["https://github.com/*"],
+      "run_at": "document_idle"
+    }
+  ]
+}
